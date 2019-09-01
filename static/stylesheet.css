@@ -44,7 +44,7 @@ body {
 a {
     display: block;
     text-decoration: none;
-    color: #2a2a2a;
+    color: #3a3a3a;
 }
 
 #primary-menu {
@@ -62,9 +62,10 @@ a:visited, a:focus, a:active, a:hover, a:visited:hover {
     text-decoration: none;
     cursor: pointer;
     outline: none;
-    color: #6d6d6d;
+    color: #121212;
     transition: .4s;
 }
+
 #primary-menu li:hover {
     background-color:  #e4e4e4;
     transition: .4s;
@@ -125,11 +126,20 @@ a:visited, a:focus, a:active, a:hover, a:visited:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+}
+
+.thumb-content:hover {
+    opacity: 1;
+    transition: .4s;
 }
 
 .continue-reading-small-caps {
-    padding: 8px;
+    padding: 5px;
     margin: 0 0 10px 0;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
 }
 
 #side-nav-btn {
@@ -364,3 +374,5 @@ input:focus {
     font-size: 36px;
     margin-left: 50px;
 }
+
+
