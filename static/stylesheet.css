@@ -85,12 +85,36 @@ a:visited, a:focus, a:active, a:hover, a:visited:hover {
     height: 180px;
     margin: 10px;
 }
+.thumb-post-img-1{
+    background-image: url(images/largechococupcakes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100;
+    position: relative;
+}
+
+.thumb-post-img-1:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/largechococupcakes.jpg);
+}
 
 .thumb-post-2 {
-    background-color: #7d5d5d;
     width: 30%;
     height: 180px;
     margin: 10px;
+}
+
+.thumb-post-img-2{
+    background-image: url(images/whitecupcakes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100;
+    position: relative;
+}
+
+.thumb-post-img-2:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/whitecupcakes.jpg);
 }
 
 .thumb-post-3 {
@@ -98,6 +122,18 @@ a:visited, a:focus, a:active, a:hover, a:visited:hover {
     width: 30%;
     height: 180px;
     margin: 10px;
+}
+.thumb-post-img-3{
+    background-image: url(images/largewhitecupcakes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100;
+    position: relative;
+}
+
+.thumb-post-img-3:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/largewhitecupcakes.jpg);
 }
 
 .thumb-post-4 {
@@ -107,11 +143,37 @@ a:visited, a:focus, a:active, a:hover, a:visited:hover {
     margin: 10px;
 }
 
+.thumb-post-img-4{
+    background-image: url(images/multicolorcupcakes.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100;
+    position: relative;
+}
+
+.thumb-post-img-4:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/multicolorcupcakes.jpg);
+}
+
 .thumb-post-5 {
     background-color: #7d5d70;
     width: 30%;
     height: 180px;
     margin: 10px;
+}
+
+.thumb-post-img-5{
+    background-image: url(images/cookies.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100;
+    position: relative;
+}
+
+.thumb-post-img-5:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/cookies.jpg);
 }
 
 .thumb-post-6 {
@@ -121,7 +183,27 @@ a:visited, a:focus, a:active, a:hover, a:visited:hover {
     margin: 10px;
 }
 
+.thumb-post-img-6{
+    background-image: url(images/brownies.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100;
+    position: relative;
+}
+
+.thumb-post-img-6:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/brownies.jpg);
+}
+
+.thumb-post {
+    height: 100%;
+    width: 100%;
+}
+
 .thumb-content {
+    height: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -132,14 +214,6 @@ a:visited, a:focus, a:active, a:hover, a:visited:hover {
 .thumb-content:hover {
     opacity: 1;
     transition: .4s;
-}
-
-.continue-reading-small-caps {
-    padding: 5px;
-    margin: 0 0 10px 0;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
 }
 
 #side-nav-btn {
@@ -203,6 +277,10 @@ a:visited, a:focus, a:active, a:hover, a:visited:hover {
         width: 100%;
         height: 180px;
         margin: 10px;
+    }
+    .thumb-post-1 img {
+        height: 180px;
+        width: 100%;
     }
     
     .thumb-post-2 {
@@ -393,4 +471,16 @@ input:focus {
     margin-left: 50px;
 }
 
+#submit-btn {
+    padding: 5px;
+    background-color:black;
+    color: white;
+}
+
+#submit-btn:active {
+    transition: .4s;
+    background-color: rgb(65, 65, 65);
+    color: white;
+    box-shadow: #3a3a3a;
+}
 
