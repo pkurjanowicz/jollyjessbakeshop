@@ -78,6 +78,10 @@ a:visited, a:focus, a:active, a:hover, a:visited:hover {
     width: 100%;
     justify-content: center;
 }
+article a {
+    height: 100%;
+    width: 100%;
+}
 
 .thumb-post-1 {
     background-color: #657d5d;
@@ -482,5 +486,13 @@ input:focus {
     background-color: rgb(65, 65, 65);
     color: white;
     box-shadow: #3a3a3a;
+}
+
+.thumb-content h3 {
+    margin: 0;
+}
+
+.thumb-content p {
+    margin: 0;
 }
 
