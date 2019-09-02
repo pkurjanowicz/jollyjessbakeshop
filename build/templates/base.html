@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jolly Jess</title>
+    <link type="text/css" rel="stylesheet" href="static/stylesheet.css">
+    <style id="styles" type="text/css"></style>
+</head>
+<header id="masthead">
+    <div class="cl-site-header">
+        <h1 class="site-title-fullsize"><a href="/" rel="home"><img src="static/images/Screen Shot 2019-08-31 at 11.06.01 PM.png" alt="I Am Baker" content="nopin"></a></h1>
+        <h1 class="site-title-mobile"><a href="/" rel="home"><img src="static/images/dd3c4852ea927d21abb7975334e07f4c.png" alt="I Am Baker" content="nopin"></a></h1>
+    </div>
+    <div class="cr-small-caps">
+        <span style="font-size:30px;cursor:pointer" onclick="toggleNav()" id="side-nav-btn">&#9776;</span>
+        <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+                <a href="/contact-us">Contact Us</a>
+                <a href="/about">About</a>
+                <a href="https://www.instagram.com/jollyjessbakeshop/">Instagram</a>
+                <a href="/cakes">Cakes</a>
+                <a href="/cookies">Cookies</a>
+                <a href="/cupcakes">Cupcakes</a>
+                <a href="/brownies">Brownies</a>
+        </div>
+        <ul id="menu-secondary-menu" class="about-menu">
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/about">About</a></li>
+            <li id="instagram" class="social-menu"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/jollyjessbakeshop/"><span id="insta-img"><img src="static/images/zI6ZGS-black-logo-instagram-png-transparent.png"></span></a></li>
+        </ul>
+    </div>
+</header>
+<nav id="site-navigation" class="main-navigation" style="top: 0px;">
+    <ul id="primary-menu" class="primary-menu">
+        <li id="cakes" class="primary-menu-item"><a href="/cakes">Cakes</a></li>
+        <li id="cookies" class="primary-menu-item"><a href="/cookies">Cookies</a></li>
+        <li id="cupcakes" class="primary-menu-item"><a href="/cupcakes">Cupcakes</a></li>
+        <li id="brownies" class="primary-menu-item"><a href="/brownies">Brownies</a></li>
+    </ul>            
+</nav>
+{% block content %}
+{% endblock %}
+<div class="contact-form-parent-container">
+        <div id="submit-contact-info" class="contact-form-container">
+            <div>
+                <h2>Get In Touch</h2>
+            </div>
+            <form id="form" method="POST">
+                <input type="text" placeholder="Name" name="name" class="form-fields" autocomplete="off">
+                <input type="email" placeholder="Email" name="email" class="form-fields" autocomplete="off">
+                <input type="text" placeholder="Phone Number" name="phone" class="form-fields" autocomplete="off">
+                <input type="submit" id="submit-btn">
+            </form>
+        </div>
+    </div>
+<script type="text/javascript" src="static/js/app.js"></script>
+</html>
