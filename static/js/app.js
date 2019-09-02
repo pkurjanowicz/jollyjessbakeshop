@@ -9,30 +9,7 @@ function createNode(element) {
 function append(parent, el) {
     return parent.appendChild(el);
 }
-
-arrayOfitemsHomePage = [
-    {
-    name: "Test-Element",
-    id: "post-7",
-    class: "thumb-post-7",
-    page: "/cupcakes",
-    divImage: "thumb-post-img-7",
-    thumbContenth3: "Cupcakes",
-    thumbContentp: "HAPPY",
-    image:"static/images/whitecupcakes.jpg",
-    },
-    {
-        name: "Test-Element",
-        id: "post-8",
-        class: "thumb-post-8",
-        page: "/cupcakes",
-        divImage: "thumb-post-img-8",
-        thumbContenth3: "Cupcakes",
-        thumbContentp: "SAD",
-        image:"static/images/multicolorcupcakes.jpg",
-        }
-]
-
+//nav bar
 function toggleNav() {
     var element = document.getElementById("mySidenav");
     if (element.style.width == "250px") {
@@ -41,6 +18,70 @@ function toggleNav() {
         element.style.width = "250px";
     }
 };
+
+//homepage item array
+arrayOfitemsHomePage = [
+    {
+    name: "Chocolate Cupcakes",
+    id: "post-1",
+    class: "thumb-post-1",
+    page: "/cupcakes",
+    divImage: "thumb-post-img-1",
+    thumbContenth3: "Cupcakes",
+    thumbContentp: "Click Here",
+    image:"static/images/largechococupcakes.jpg",
+    },
+    {
+    name: "Vanilla Cupcakes2",
+    id: "post-2",
+    class: "thumb-post-2",
+    page: "/cupcakes",
+    divImage: "thumb-post-img-2",
+    thumbContenth3: "Cupcakes",
+    thumbContentp: "Click Here",
+    image:"static/images/largewhitecupcakes2.jpg",
+    },
+    {
+    name: "Vanilla Cupcakes",
+    id: "post-3",
+    class: "thumb-post-3",
+    page: "/cupcakes",
+    divImage: "thumb-post-img-3",
+    thumbContenth3: "Cupcakes",
+    thumbContentp: "Click Here",
+    image:"static/images/largewhitecupcakes.jpg",
+    },
+    {
+    name: "MultiColor Cupcakes",
+    id: "post-4",
+    class: "thumb-post-4",
+    page: "/cupcakes",
+    divImage: "thumb-post-img-4",
+    thumbContenth3: "Cupcakes",
+    thumbContentp: "Click Here",
+    image:"static/images/multicolorcupcakes.jpg",
+    },
+    {
+    name: "Cookies",
+    id: "post-5",
+    class: "thumb-post-5",
+    page: "/cookies",
+    divImage: "thumb-post-img-5",
+    thumbContenth3: "Cookies",
+    thumbContentp: "Click Here",
+    image:"static/images/cookies.jpg",
+    },
+    {
+    name: "Brownies",
+    id: "post-6",
+    class: "thumb-post-6",
+    page: "/brownies",
+    divImage: "thumb-post-img-6",
+    thumbContenth3: "Brownies",
+    thumbContentp: "Click Here",
+    image:"static/images/brownies.jpg",
+    }
+]
 
 arrayOfitemsHomePage.forEach(function(item){
     let a = createNode('a'),
@@ -67,10 +108,10 @@ arrayOfitemsHomePage.forEach(function(item){
     append(a,divThumbPost);
     append(article,a);
     append(homePageContainer,article);
-    // Your CSS as text
+
+    //CSS below for homepage
     var styles = `
     .${item.class} {
-        background-color: #657d5d;
         width: 30%;
         height: 180px;
         margin: 10px;
@@ -87,6 +128,18 @@ arrayOfitemsHomePage.forEach(function(item){
     .${item.divImage}:hover {
         background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(${item.image});
     }
+    @media (max-width : 750px) {
+        .${item.class} {
+            width: 45%;
+            height: 180px;
+            margin: 10px;
+        }
+    @media (max-width : 520px) {
+        .${item.class} {
+            width: 100%;
+            height: 180px;
+            margin: 10px;
+        }
     `
 
     var styleSheet = document.createElement("style")
@@ -94,5 +147,5 @@ arrayOfitemsHomePage.forEach(function(item){
     styleSheet.innerHTML = styles
     document.head.appendChild(styleSheet)
 });
-    
+
 
