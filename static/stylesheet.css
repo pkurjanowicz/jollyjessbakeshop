@@ -102,6 +102,26 @@ article a {
 .thumb-post-img-1:hover {
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/largechococupcakes.jpg);
 }
+/* TEST */
+/* .thumb-post-7 {
+    /* background-color: #657d5d; */
+    /* width: 30%;
+    height: 180px;
+    margin: 10px;
+} */
+/* .thumb-post-img-7{ */
+    /* background-image: url(images/largechococupcakes.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 100%;
+    width: 100;
+    position: relative;
+} */
+
+/* .thumb-post-img-7:hover {
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/largechococupcakes.jpg); */
+/* } */
+/* TEST */
 
 .thumb-post-2 {
     width: 30%;
