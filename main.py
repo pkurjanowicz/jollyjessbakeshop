@@ -28,6 +28,9 @@ def cupcakes():
 def brownies():
     return render_template('brownies.html')
 
+@app.route("/contact-us", methods=["GET"])
+def contact_us():
+    return render_template('contact.html')
 
 if __name__ == "__main__":
     app.run()
